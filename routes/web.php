@@ -11,10 +11,26 @@
 |
 */
 
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('landing');
+})->name('home');;
+
+Route::get('/blog', function () {
+    return view('layouts.pages.blog');
+})->name('blog');;
+
+Route::get('/contact', function () {
+    return view('layouts.pages.contact');
+})->name('contact');;
+
+Route::get('/about', function () {
+    return view('layouts.pages.about');
+})->name('about');;
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+// Route::get('/home', 'HomeController@index')->name('home');
