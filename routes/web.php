@@ -29,7 +29,11 @@ Route::get('/contact', function () {
 
 Route::get('/about', function () {
     return view('layouts.pages.about');
-})->name('about');;
+})->name('about');
+
+Route::get('/blog-post', function () {
+    return view('layouts.pages.blog-post');
+})->name('blog-post');;
 
 Auth::routes();
 

@@ -5,18 +5,18 @@
  </head>
  <body>
 @include('layouts.partials.header')
-		<!-- Hero-area -->
+		<!-- Hero-area -->      
 		<div class="hero-area section">
 
 			<!-- Backgound Image -->
-			<div class="bg-image bg-parallax overlay" style="background-image:url(./img/page-background.jpg)"></div>
+			<div class="bg-image bg-parallax overlay" style="background-image:url( {{ asset('assets/img/page-background.jpg') }} )"></div>
 			<!-- /Backgound Image -->
 
 			<div class="container">
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1 text-center">
 						<ul class="hero-area-tree">
-							<li><a href="index.html">Home</a></li>
+							<li><a href="{{ route('home') }}">Home</a></li>
 							<li>Blog</li>
 						</ul>
 						<h1 class="white-text">Blog Page</h1>
@@ -47,11 +47,11 @@
 							<div class="col-md-6">
 								<div class="single-blog">
 									<div class="blog-img">
-										<a href="blog-post.html">
-											<img src="./img/blog01.jpg" alt="">
+										<a href="{{ route('blog-post') }}">
+											 <img src="{{ asset('assets/img/blog01.jpg') }}" alt="">
 										</a>
 									</div>
-									<h4><a href="blog-post.html">Pro eu error molestie deserunt. At per viderer bonorum persecuti.</a></h4>
+									<h4><a href="{{ route('blog-post') }}">Pro eu error molestie deserunt. At per viderer bonorum persecuti.</a></h4>
 									<div class="blog-meta">
 										<span class="blog-meta-author">By: <a href="#">John Doe</a></span>
 										<div class="pull-right">
@@ -67,11 +67,11 @@
 							<div class="col-md-6">
 								<div class="single-blog">
 									<div class="blog-img">
-										<a href="blog-post.html">
-											<img src="./img/blog02.jpg" alt="">
+										<a href="{{ route('blog-post') }}">
+											 <img src="{{ asset('assets/img/blog02.jpg') }}" alt="">
 										</a>
 									</div>
-									<h4><a href="blog-post.html">Pro eu error molestie deserunt. At per viderer bonorum persecuti.</a></h4>
+									<h4><a href="{{ route('blog-post') }}">Pro eu error molestie deserunt. At per viderer bonorum persecuti.</a></h4>
 									<div class="blog-meta">
 										<span class="blog-meta-author">By: <a href="#">John Doe</a></span>
 										<div class="pull-right">
@@ -87,11 +87,11 @@
 							<div class="col-md-6">
 								<div class="single-blog">
 									<div class="blog-img">
-										<a href="blog-post.html">
-											<img src="./img/blog03.jpg" alt="">
+										<a href="{{ route('blog-post') }}">
+											 <img src="{{ asset('assets/img/blog03.jpg') }}" alt="">
 										</a>
 									</div>
-									<h4><a href="blog-post.html">Pro eu error molestie deserunt. At per viderer bonorum persecuti.</a></h4>
+									<h4><a href="{{ route('blog-post') }}">Pro eu error molestie deserunt. At per viderer bonorum persecuti.</a></h4>
 									<div class="blog-meta">
 										<span class="blog-meta-author">By: <a href="#">John Doe</a></span>
 										<div class="pull-right">
@@ -107,11 +107,11 @@
 							<div class="col-md-6">
 								<div class="single-blog">
 									<div class="blog-img">
-										<a href="blog-post.html">
-											<img src="./img/blog04.jpg" alt="">
+										<a href="{{ route('blog-post') }}">
+											 <img src="{{ asset('assets/img/blog04.jpg') }}" alt="">
 										</a>
 									</div>
-									<h4><a href="blog-post.html">Pro eu error molestie deserunt. At per viderer bonorum persecuti.</a></h4>
+									<h4><a href="{{ route('blog-post') }}">Pro eu error molestie deserunt. At per viderer bonorum persecuti.</a></h4>
 									<div class="blog-meta">
 										<span class="blog-meta-author">By: <a href="#">John Doe</a></span>
 										<div class="pull-right">
@@ -178,30 +178,30 @@
 
 							<!-- single posts -->
 							<div class="single-post">
-								<a class="single-post-img" href="blog-post.html">
-									<img src="./img/post01.jpg" alt="">
+								<a class="single-post-img" href="{{ route('blog-post') }}">
+									 <img src="{{ asset('assets/img/post01.jpg') }}" alt="">
 								</a>
-								<a href="blog-post.html">Pro eu error molestie deserunt.</a>
+								<a href="{{ route('blog-post') }}">Pro eu error molestie deserunt.</a>
 								<p><small>By : John Doe .18 Oct, 2017</small></p>
 							</div>
 							<!-- /single posts -->
 
 							<!-- single posts -->
 							<div class="single-post">
-								<a class="single-post-img" href="blog-post.html">
-									<img src="./img/post02.jpg" alt="">
+								<a class="single-post-img" href="{{ route('blog-post') }}">
+									 <img src="{{ asset('assets/img/post02.jpg') }}" alt="">
 								</a>
-								<a href="blog-post.html">Pro eu error molestie deserunt.</a>
+								<a href="{{ route('blog-post') }}">Pro eu error molestie deserunt.</a>
 								<p><small>By : John Doe .18 Oct, 2017</small></p>
 							</div>
 							<!-- /single posts -->
 
 							<!-- single posts -->
 							<div class="single-post">
-								<a class="single-post-img" href="blog-post.html">
-									<img src="./img/post03.jpg" alt="">
+								<a class="single-post-img" href="{{ route('blog-post') }}">
+									 <img src="{{ asset('assets/img/post03.jpg') }}" alt="">
 								</a>
-								<a href="blog-post.html">Pro eu error molestie deserunt.</a>
+								<a href="{{ route('blog-post') }}">Pro eu error molestie deserunt.</a>
 								<p><small>By : John Doe .18 Oct, 2017</small></p>
 							</div>
 							<!-- /single posts -->
@@ -235,69 +235,6 @@
 		</div>
 		<!-- /Blog -->
 
-		<!-- Footer -->
-		<footer id="footer" class="section">
-
-			<!-- container -->
-			<div class="container">
-
-				<!-- row -->
-				<div class="row">
-
-					<!-- footer logo -->
-					<div class="col-md-6">
-						<div class="footer-logo">
-							<a class="logo" href="index.html">
-								<img src="./img/logo.png" alt="logo">
-							</a>
-						</div>
-					</div>
-					<!-- footer logo -->
-
-					<!-- footer nav -->
-					<div class="col-md-6">
-						<ul class="footer-nav">
-							<li><a href="index.html">Home</a></li>
-							<li><a href="#">About</a></li>
-							<li><a href="#">Courses</a></li>
-							<li><a href="blog.html">Blog</a></li>
-							<li><a href="contact.html">Contact</a></li>
-						</ul>
-					</div>
-					<!-- /footer nav -->
-
-				</div>
-				<!-- /row -->
-
-				<!-- row -->
-				<div id="bottom-footer" class="row">
-
-					<!-- social -->
-					<div class="col-md-4 col-md-push-8">
-						<ul class="footer-social">
-							<li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
-							<li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
-							<li><a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a></li>
-							<li><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>
-							<li><a href="#" class="youtube"><i class="fa fa-youtube"></i></a></li>
-							<li><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
-						</ul>
-					</div>
-					<!-- /social -->
-
-					<!-- copyright -->
-					<div class="col-md-8 col-md-pull-4">
-						<div class="footer-copyright">
-							<span>&copy; Copyright 2018. All Rights Reserved. | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com">Colorlib</a></span>
-						</div>
-					</div>
-					<!-- /copyright -->
-
-				</div>
-				<!-- row -->
-
-			</div>
-			<!-- /container -->
 @include('layouts.partials.footer')
 @include('layouts.partials.footer-scripts')
  </body>

@@ -9,7 +9,7 @@
 					<!-- footer logo -->
 					<div class="col-md-6">
 						<div class="footer-logo">
-							<a class="logo" href="index.html">
+							<a class="logo" href="{{ route('home') }}">
                                 <img src="{{ asset('assets/img/logo.png') }}" alt="logo" />
 							</a>
 						</div>
@@ -19,11 +19,11 @@
 					<!-- footer nav -->
 					<div class="col-md-6">
 						<ul class="footer-nav">
-							<li><a href="index.html">Home</a></li>
-							<li><a href="#">About</a></li>
-							<li><a href="#">Courses</a></li>
-							<li><a href="blog.html">Blog</a></li>
-							<li><a href="contact.html">Contact</a></li>
+							<li><a href="{{ route('home') }}">Home</a></li>
+							<li><a href="{{ route('about') }}">About</a></li>
+							<li><a href="{{ route('blog-post') }}">Courses</a></li>
+							<li><a href="{{ route('blog') }}">Blog</a></li>
+							<li><a href="{{ route('contact') }}">Contact</a></li>
 						</ul>
 					</div>
 					<!-- /footer nav -->

@@ -245,7 +245,7 @@
 
     <div class="row">
         <div class="center-btn">
-            <a class="main-button icon-button" href="#">More Courses</a>
+            <a class="main-button icon-button" href="{{ route('blog-post') }}">More Courses</a>
         </div>
     </div>
 

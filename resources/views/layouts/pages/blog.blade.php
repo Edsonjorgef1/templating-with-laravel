@@ -9,14 +9,14 @@
 		<div class="hero-area section">
 
 			<!-- Backgound Image -->
-			<div class="bg-image bg-parallax overlay" style="background-image:url(./img/page-background.jpg)"></div>
+			<div class="bg-image bg-parallax overlay" style="background-image:url( {{ asset('assets/img/page-background.jpg') }} )"></div>
 			<!-- /Backgound Image -->
 
 			<div class="container">
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1 text-center">
 						<ul class="hero-area-tree">
-							<li><a href="index.html">Home</a></li>
+							<li><a href="{{ route('home') }}">Home</a></li>
 							<li>Blog</li>
 						</ul>
 						<h1 class="white-text">Blog Page</h1>
@@ -47,11 +47,11 @@
 							<div class="col-md-6">
 								<div class="single-blog">
 									<div class="blog-img">
-										<a href="blog-post.html">
-											<img src="./img/blog01.jpg" alt="">
+										<a href="{{ route('blog-post') }}">
+											 <img src="{{ asset('assets/img/blog01.jpg') }}" alt="">
 										</a>
 									</div>
-									<h4><a href="blog-post.html">Pro eu error molestie deserunt. At per viderer bonorum persecuti.</a></h4>
+									<h4><a href="{{ route('blog-post') }}">Pro eu error molestie deserunt. At per viderer bonorum persecuti.</a></h4>
 									<div class="blog-meta">
 										<span class="blog-meta-author">By: <a href="#">John Doe</a></span>
 										<div class="pull-right">
@@ -67,11 +67,11 @@
 							<div class="col-md-6">
 								<div class="single-blog">
 									<div class="blog-img">
-										<a href="blog-post.html">
-											<img src="./img/blog02.jpg" alt="">
+										<a href="{{ route('blog-post') }}">
+											 <img src="{{ asset('assets/img/blog02.jpg') }}" alt="">
 										</a>
 									</div>
-									<h4><a href="blog-post.html">Pro eu error molestie deserunt. At per viderer bonorum persecuti.</a></h4>
+									<h4><a href="{{ route('blog-post') }}">Pro eu error molestie deserunt. At per viderer bonorum persecuti.</a></h4>
 									<div class="blog-meta">
 										<span class="blog-meta-author">By: <a href="#">John Doe</a></span>
 										<div class="pull-right">
@@ -87,11 +87,11 @@
 							<div class="col-md-6">
 								<div class="single-blog">
 									<div class="blog-img">
-										<a href="blog-post.html">
-											<img src="./img/blog03.jpg" alt="">
+										<a href="{{ route('blog-post') }}">
+											 <img src="{{ asset('assets/img/blog03.jpg') }}" alt="">
 										</a>
 									</div>
-									<h4><a href="blog-post.html">Pro eu error molestie deserunt. At per viderer bonorum persecuti.</a></h4>
+									<h4><a href="{{ route('blog-post') }}">Pro eu error molestie deserunt. At per viderer bonorum persecuti.</a></h4>
 									<div class="blog-meta">
 										<span class="blog-meta-author">By: <a href="#">John Doe</a></span>
 										<div class="pull-right">
@@ -107,11 +107,11 @@
 							<div class="col-md-6">
 								<div class="single-blog">
 									<div class="blog-img">
-										<a href="blog-post.html">
-											<img src="./img/blog04.jpg" alt="">
+										<a href="{{ route('blog-post') }}">
+											 <img src="{{ asset('assets/img/blog04.jpg') }}" alt="">
 										</a>
 									</div>
-									<h4><a href="blog-post.html">Pro eu error molestie deserunt. At per viderer bonorum persecuti.</a></h4>
+									<h4><a href="{{ route('blog-post') }}">Pro eu error molestie deserunt. At per viderer bonorum persecuti.</a></h4>
 									<div class="blog-meta">
 										<span class="blog-meta-author">By: <a href="#">John Doe</a></span>
 										<div class="pull-right">
@@ -178,30 +178,30 @@
 
 							<!-- single posts -->
 							<div class="single-post">
-								<a class="single-post-img" href="blog-post.html">
-									<img src="./img/post01.jpg" alt="">
+								<a class="single-post-img" href="{{ route('blog-post') }}">
+									 <img src="{{ asset('assets/img/post01.jpg') }}" alt="">
 								</a>
-								<a href="blog-post.html">Pro eu error molestie deserunt.</a>
+								<a href="{{ route('blog-post') }}">Pro eu error molestie deserunt.</a>
 								<p><small>By : John Doe .18 Oct, 2017</small></p>
 							</div>
 							<!-- /single posts -->
 
 							<!-- single posts -->
 							<div class="single-post">
-								<a class="single-post-img" href="blog-post.html">
-									<img src="./img/post02.jpg" alt="">
+								<a class="single-post-img" href="{{ route('blog-post') }}">
+									 <img src="{{ asset('assets/img/post02.jpg') }}" alt="">
 								</a>
-								<a href="blog-post.html">Pro eu error molestie deserunt.</a>
+								<a href="{{ route('blog-post') }}">Pro eu error molestie deserunt.</a>
 								<p><small>By : John Doe .18 Oct, 2017</small></p>
 							</div>
 							<!-- /single posts -->
 
 							<!-- single posts -->
 							<div class="single-post">
-								<a class="single-post-img" href="blog-post.html">
-									<img src="./img/post03.jpg" alt="">
+								<a class="single-post-img" href="{{ route('blog-post') }}">
+									 <img src="{{ asset('assets/img/post03.jpg') }}" alt="">
 								</a>
-								<a href="blog-post.html">Pro eu error molestie deserunt.</a>
+								<a href="{{ route('blog-post') }}">Pro eu error molestie deserunt.</a>
 								<p><small>By : John Doe .18 Oct, 2017</small></p>
 							</div>
 							<!-- /single posts -->
