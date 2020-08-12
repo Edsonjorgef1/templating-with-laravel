@@ -13,8 +13,8 @@
                       <tr>
                         <th scope="col">Name</th>
                         <th scope="col">Email</th>
-                        <!-- <th scope="col">Last</th>
-                        <th scope="col">Handle</th> -->
+                         <th scope="col">Role</th>
+                       <!-- <th scope="col">Handle</th> -->
                       </tr>
                     </thead>
                     <tbody>
@@ -22,6 +22,7 @@
                         <tr>
                           <th> {{ $user->name}} </th>
                           <th> {{ $user->email}} </th>
+                          <th> {{ implode('"', $user->roles()->get()->pluck('name')->toArray()) }} </th>
                         </tr>
                       @endforeach
                     </tbody>

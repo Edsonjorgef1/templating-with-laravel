@@ -15,7 +15,17 @@ class UserController extends Controller
      */
     public function index()
     {
-        return view('admin.users.index')->with('users', User::all());
+        $user = User::get();
+        // dd($user);
+        // $role = implode(', ', $user->roles()->get()->pluck('name')->toArray());
+        // foreach ($user as $u){
+        //     $role = $u->roles()->get()->pluck('name')->toArray();
+        //     var_dump($role);
+        // }
+
+        // dd($role);
+
+        return view('admin.users.index')->with('users', $user);
     }
 
     /**
