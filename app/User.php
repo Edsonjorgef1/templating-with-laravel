@@ -42,12 +42,12 @@ class User extends Authenticatable
     }
 
     /* HELPERS FUNCTIONS TO CHECK IF USER HAS A ROLE OR ROLES */
-    public function hasAnyRoles($roles){
-        return null !== $this->roles()->whereIn('name', $roles)->first();
+    public function hasAnyRoles($roles){ 
+        return null !== $this->roles()->whereIn('name', [$roles])->first(); // 2nd param must be an array
     }
 
     public function hasAnyRole($role){
-        return null !== $this->roles()->whereIn('name', $role)->first();
+        return null !== $this->roles()->whereIn('name', [$role])->first();
     }
 
 }
