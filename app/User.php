@@ -45,7 +45,7 @@ class User extends Authenticatable
     //TODO:  Not working this function very fine now
     public function hasAnyRoles($roles){ 
         // dd($this->roles()->whereIn('name', $roles)->first());
-        return null !== $this->roles()->whereIn('name', [$roles])->first(); // 2nd param must be an array
+        return null !== $this->roles()->whereIn('name', $roles)->first(); // Went back to the the first idea
     }
 
     public function hasAnyRole($role){
