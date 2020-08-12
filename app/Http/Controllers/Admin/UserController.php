@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Admin;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\User;
+use App\Role;
+use Auth;
 
 class UserController extends Controller
 {
@@ -36,7 +38,13 @@ class UserController extends Controller
      */
     public function edit($id)
     {
-        //
+        if(Auth::user()->id == $id){
+            return redirect()->route('admin.users.index');
+        }
+        return view('admin.users.edit')->with([
+                    'user' => User::find($id), 
+                    'roles' => Role::all()
+                    ]);
     }
 
     /**
