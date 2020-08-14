@@ -17,7 +17,7 @@ class UserController extends Controller
      */
     public function index()
     {
-        $user = User::get();
+        $user = User::paginate(5);
         // dd($user);
         // $role = implode(', ', $user->roles()->get()->pluck('name')->toArray());
         // foreach ($user as $u){
