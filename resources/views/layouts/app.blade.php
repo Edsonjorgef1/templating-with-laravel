@@ -32,11 +32,17 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
+                    
                     <ul class="navbar-nav mr-auto">
+                       <!-- @hasrole('admin') -->
+                       <!-- @if (Auth::user()->id == 1) -->
                         <li class="nav-item">
                             <a href="{{ route('admin.users.index') }}"> Manage Users</a>
                         </li>
+                        <!-- @endif -->
+                        <!-- @endhasrole -->
                     </ul>
+                    
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
