@@ -33,17 +33,20 @@ Route::get('/about', function () {
 
 Route::get('/blog-post', function () {
     return view('layouts.pages.blog-post');
-})->name('blog-post');;
-
-Route::get('/admin', function(){
-    return 'you are admin';
-})->middleware(['auth','auth.admin']);
+})->name('blog-post');
 
 Auth::routes();
 
 // Route::resource('users', 'Admin\UserController', 
 //     ['except' => ['show', 'create', 'store']
 // ]);
+
+/* ROUTES FOR THE STUDY ON ACCESS ROLES */
+
+Route::get('/admin', function(){
+    return 'you are admin';
+})->middleware(['auth','auth.admin']);
+
 
 Route::namespace('Admin')->prefix('admin')->middleware(['auth','auth.admin'])->name('admin.')->group(function(){
 Route::resource('users', 'UserController', 
